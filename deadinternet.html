@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Internet is Dead</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Azeret+Mono&display=swap');
+        body {
+            background: url('https://ozrug.neocities.org/Deadinternet%20files/daha%20dusuk.gif') repeat; 
+            background-size: 20px 20px;
+            font-family: 'Azeret Mono', monospace;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        .background-alt {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://ozrug.neocities.org/Deadinternet%20files/twitter%20kus%20.gif') no-repeat center center fixed;
+            background-size: cover;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+            z-index: -1;
+        }
+
+        .scroll-section {
+            position: relative;
+            z-index: 1;
+        }
+        .language-selector {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            font-size: 1.2em;
+            z-index: 10;
+        }
+        .collage-item {
+            position: relative;
+            margin: 50px auto;
+            width: fit-content;
+            text-align: center;
+        }
+        h1 {
+            font-size: 4em;
+            font-weight: bold;
+            animation: flashing 0.5s infinite alternate;
+            text-shadow: 2px 2px 0px #ffffff, -2px -2px 0px #ffffff, 2px -2px 0px #ffffff, -2px 2px 0px #ffffff;
+            margin: 0;
+        }
+        h2 {
+            font-size: 2em;
+            margin: 0.5em 0;
+        }
+        @keyframes flashing {
+            0% { opacity: 1; }
+            100% { opacity: 0; }
+        }
+        img {
+            width: 100%;
+            height: auto;
+        }
+        .example-item {
+            border: 2px dashed #aaa;
+            width: 200px;
+            height: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #aaa;
+            font-size: 1em;
+            margin: 50px auto;
+        }
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5em;
+            }
+            h2 {
+                font-size: 1.5em;
+            }
+            .language-selector {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- Dil Seçici (Dil değiştirmek için) -->
+    <div class="language-selector">
+        <a href="#" onclick="setLanguage('en')">EN</a> | <a href="#" onclick="setLanguage('tr')">TR</a>
+    </div>
+
+    <!-- Kolaj Alanı (Tüm içerikler bu alan içinde olacak) -->
+    <div class="scroll-section">
+        <!-- Başlık (Yazı 1) -->
+        <div class="collage-item">
+            <h1>THE INTERNET IS DEAD</h1>
+        </div>
+
+        <!-- Görsel 1 (Görsel 2) -->
+        <div class="collage-item">
+            <img src="https://ozrug.neocities.org/jesuswshacctrans.png" alt="Image Placeholder">
+        </div>
+        
+
+        
+
+       <!-- Küçük Başlık 1 (Başlık 4) -->
+        <div class="collage-item" style="width 400px;">
+            <h2>the internet does feel empty now</h2>
+        </div>
+
+        <div class="collage-item" style="width 400px;">
+            <h2>doesn't it ?</h2>
+        </div>
+        <div class="collage-item" style="width 400px;">
+            <h2>dead </h2>
+        </div>
+        <div class="collage-item" style="width 400px;">
+            <h2>nothing to see </h2>
+        </div>
+        <div class="collage-item" style="width 400px;">
+            <h2>nothing to read </h2>
+        </div>
+        <div class="collage-item" style="width 400px;">
+            <h2>nothing to experience</h2>
+        </div>
+        <div class="collage-item" style="width 400px;">
+            <h2>Internet seems gigantic but its just an hot air balloon with nothing inside</h2>
+        </div>
+        <div class="collage-item" style="width 100px;">
+            <p>except for bots </p>
+        </div>
+        
+       <div class="collage-item" style="width 400px;">
+            <h2>This is the internet traffic report in 2024:</h2>
+        </div>
+       
+        <div class="collage-item">
+            <img src="https://ozrug.neocities.org/Deadinternet%20files/botsoglilimi.gif" alt="Image Placeholder">
+        </div>
+        
+        <div class="collage-item" style="width 100px;">
+            <p>half of the internet is not organic and 32% of them are bad bots </p>
+        </div>
+        
+        <div class="collage-item" style="width 100px;">
+            <p>before elon musk bought the twitter 
+           spam and bot accounts represent 11% of Twitter’s total user base. </p>
+        </div>
+        
+        <div class="collage-item">
+            <img src="https://ozrug.neocities.org/Deadinternet%20files/elon.gif" alt="Image Placeholder">
+        </div>
+        <div class="collage-item">
+            <img src="https://ozrug.neocities.org/Deadinternet%20files/elon.gif" alt="Image Placeholder">
+        </div>
+        
+        
+        <div class="collage-item" style="width 100px;">
+            <p>that means roughly 44 million bots  </p>
+        </div>
+        
+        <div class="collage-item" style="width 100px;">
+            <p>posting , commenting ,engaging   </p>
+        </div>
+        
+        
+        <div class="collage-item" style="width 100px;">
+            <p>24/7 </p>
+        </div>
+        
+        
+        
+        
+      
+
+    <script>
+        function setLanguage(lang) {
+            if (lang === 'tr') {
+                document.querySelector('h1').textContent = 'İNTERNET ÖLDÜ';
+                document.querySelectorAll('h2')[0].textContent = 'İnternet şimdi gerçekten boş gibi görünüyor';
+                document.querySelectorAll('h2')[1].textContent = 'Öyle değil mi?';
+                document.querySelectorAll('h2')[2].textContent = 'Ölü';
+                document.querySelector('p').textContent = 'Ölü İnternet Teorisi, internet trafiğinin, gönderilerin ve kullanıcıların büyük çoğunluğunun botlar ve AI tarafından oluşturulmuş içeriklerle değiştirildiği ve insanların artık internetin yönünü şekillendirmediğine dair bir inançtır.';
+            } else {
+                document.querySelector('h1').textContent = 'THE INTERNET IS DEAD';
+                document.querySelectorAll('h2')[0].textContent = 'the internet does feel empty now';
+                document.querySelectorAll('h2')[1].textContent = 'doesnt it ?';
+                document.querySelectorAll('h2')[2].textContent = 'dead';
+                document.querySelector('p').textContent = 'The Dead Internet Theory is the belief that the vast majority of internet traffic, posts and users have been replaced by bots and AI-generated content, and that people no longer shape the direction of the internet.';
+            }
+        }
+    </script>
+    
+</body>
+</html>
